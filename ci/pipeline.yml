@@ -8,12 +8,12 @@ resources:
 - name: staging-app
   type: cf
   source:
-    api: http://api.local.pcfdev.io
+    api: https://api.local.pcfdev.io
     username: admin
     password: admin
     organization: pcfdev-org
     space: pcfdev-space
-
+    skip_cert_check: true
 jobs:
 - name: test-app
   plan:
